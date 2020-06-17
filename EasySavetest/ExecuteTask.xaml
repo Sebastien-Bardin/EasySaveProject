@@ -1,0 +1,21 @@
+﻿<Window x:Class="EasySavetest.ExecuteTask"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasySavetest"
+        mc:Ignorable="d"
+        Title="ExecuteTask" Height="450" Width="800">
+    <Grid Background="#FF57AEAD">
+        <Button Name="ExecBtn" Click="ExecBtn_Click" Content="Play" HorizontalAlignment="Left" Margin="47,337,0,0" VerticalAlignment="Top" Width="75" Background="#FF64DD3E" Height="36"/>
+        <ListBox SelectionChanged="SelectedTaskChange" Name="TaskList" HorizontalAlignment="Left" Height="225" Margin="47,85,0,0" VerticalAlignment="Top" Width="699" Background="White"/>
+        <Button Name ="BtnExit" Click="BtnExit_Click" Content="Exit" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label HorizontalAlignment="Left" Height="33" Margin="47,47,0,0" Content="Select a task" VerticalAlignment="Top" Width="125" BorderBrush="White" FontSize="18"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="671,354,0,0" VerticalAlignment="Top" Width="75" Background="#FF64DD3E" Click="BtnAdd_Click"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Margin="207,337,0,0" VerticalAlignment="Top" Width="75" Height="36" Background="#FFF34F18" Click="Cancel_Click"/>
+        <Button Name ="PauseBtn" Click="BtnPause" Content="Pause" HorizontalAlignment="Left" Margin="127,337,0,0" VerticalAlignment="Top" Width="75" Height="36" RenderTransformOrigin="1.692,0.653" Background="#FFFEFF22"/>
+        <Button Content="Refresh" Click="BtnRefresh" HorizontalAlignment="Left" Margin="670,57,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="591,354,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.509,-0.562" Click="BtnDelete" Background="#FFF34F18"/>
+
+    </Grid>
+</Window>

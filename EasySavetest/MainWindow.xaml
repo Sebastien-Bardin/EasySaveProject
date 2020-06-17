@@ -1,0 +1,18 @@
+﻿<Window x:Class="EasySavetest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasySavetest"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid Background="#FF57AEAD">
+        <TextBlock HorizontalAlignment="Left" Height="68" Margin="39,40,0,0" TextWrapping="Wrap" Text="EasySave" VerticalAlignment="Top" Width="238" FontSize="48" FontFamily="Century Gothic"/>
+        <Button Name="BtnExecute" Click="BtnExecute_Click" Content="Manage Tasks" HorizontalAlignment="Left" Margin="39,191,0,0" VerticalAlignment="Top" Width="150" FontSize="14" Height="45"/>
+        <Button Name="BtnExecAll" Click="BtnExecAll_Click" Content="Execute all saved tasks" HorizontalAlignment="Left" Margin="39,280,0,0" VerticalAlignment="Top" Width="150" FontSize="14" Height="45"/>
+        <Button Name="BtnConfig" Content="Configuration" Click="BtnConfig_Click" HorizontalAlignment="Left" Margin="569,12,0,0" VerticalAlignment="Top" Width="95" FontSize="14" Background="#FF46D918"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="39,108,0,0" TextWrapping="Wrap" Text="Welcome to our save software EasySave" VerticalAlignment="Top" Width="344" FontSize="18" />
+        <Label Name="ErrorExecAll" HorizontalAlignment="Left" Height="23" Margin="212,309,0,0"  Content="" VerticalAlignment="Top" Width="120" BorderBrush="White"/>
+    <Button Click="BtnExit_Click" Content="Exit" HorizontalAlignment="Left" Margin="689,12,0,0" VerticalAlignment="Top" Width="95" Height="22"/>
+  </Grid>
+</Window>
